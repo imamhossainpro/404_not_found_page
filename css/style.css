@@ -1,0 +1,154 @@
+ /* Google Fonts (Inconsolata, Space Mono, Montserrat)  */
+ @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@700&family=Space+Mono:wght@400;700&display=swap');
+
+/* Basic Setup */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Styles */
+.nav-text{
+    width: 133px;
+    height: 25px;
+    margin-left: 77px;
+    margin-top: 40px;
+}
+.nav-text h4{
+    font-family: 'Inconsolata', monospace;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 25px;
+    letter-spacing: -0.08em;
+    text-transform: uppercase;
+    color: #333333;
+}
+
+.main-section{
+    display: flex;
+    padding: 50px 50px;
+}
+
+.image-div{
+    width: 850px;
+    padding: 50px;
+}
+.image-div img{
+    width: 100%;
+}
+.content{
+    width: 600px;
+    padding-top: 50px;
+}
+.content h1{
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 95px;
+    letter-spacing: -0.035em;
+    color: #333333;
+    margin-bottom: 36px;
+}
+.content p{
+    width: 381px;
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.035em;
+    color: #4F4F4F;
+    margin-bottom: 64px;
+}
+.content a{
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.035em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #333333;
+    padding: 24px 43px;
+    text-decoration: none;
+}
+/* Responsive Page */
+
+
+
+ /* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+    .main-section{
+        flex-direction: column;
+        padding: 0px;
+        margin-left: 20px;
+        overflow: hidden;
+    }
+    .image-div{
+        width: 400px;
+        padding: 50px;
+    }
+    
+    .content{
+        width: 400px;
+        padding-top: 20px;
+        margin: 0 auto;
+    }
+    .content h1{
+        font-size: 48px;
+        padding: 0;
+    }
+ }
+
+ footer{
+    width: 400px;
+    display: table;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+footer a{
+    text-decoration: none;
+    color: #333333;
+}
+footer span{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    
+    color: #BDBDBD;
+}
+ /* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+    .main-section{
+        flex-direction: column;
+        padding: 0;
+    }
+    .image-div{
+        width: 450px;
+        padding: 50px;
+    }
+    .content{
+        width: 600px;
+        padding-top: 20px;
+        margin: 0 auto;
+    }
+ }
+
+ /* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+    .main-section{
+        flex-direction: column;
+        padding: 0;
+    }
+    .content{
+        width: 600px;
+        padding-top: 20px;
+        margin: 0 auto;
+    }
+ }
