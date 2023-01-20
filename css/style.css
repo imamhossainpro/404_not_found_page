@@ -8,7 +8,6 @@
     box-sizing: border-box;
 }
 
-
 /* Styles */
 .nav-text{
     width: 133px;
@@ -67,8 +66,6 @@
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
-    line-height: 21px;
-    letter-spacing: -0.035em;
     text-transform: uppercase;
     color: #FFFFFF;
     background: #333333;
@@ -77,34 +74,8 @@
 }
 /* Responsive Page */
 
-
-
- /* Small devices (landscape phones, 576px and up) */
-@media (max-width: 576px) {
-    .main-section{
-        flex-direction: column;
-        padding: 0px;
-        margin-left: 20px;
-        overflow: hidden;
-    }
-    .image-div{
-        width: 400px;
-        padding: 50px;
-    }
-    
-    .content{
-        width: 400px;
-        padding-top: 20px;
-        margin: 0 auto;
-    }
-    .content h1{
-        font-size: 48px;
-        padding: 0;
-    }
- }
-
  footer{
-    margin-top: 60px;
+    margin-top: 100px;
     width: 400px;
     display: table;
     text-align: center;
@@ -126,18 +97,24 @@ footer span{
 }
  /* Medium devices (tablets, 768px and up) */
 @media (max-width: 768px) {
+    .nav-text{
+        margin-left: 5px;
+        margin-top: 5px;
+        margin-bottom: 25px;
+    }
     .main-section{
         flex-direction: column;
         padding: 0;
     }
     .image-div{
-        width: 450px;
-        padding: 50px;
+        width: 400px;
+        align-items: left;
+        padding: 0;
     }
     .content{
         width: 600px;
         padding-top: 20px;
-        margin: 0 auto;
+        margin: 0;
     }
  }
 
@@ -146,10 +123,51 @@ footer span{
     .main-section{
         flex-direction: column;
         padding: 0;
+        margin: 0;
     }
     .content{
-        width: 600px;
+        width: 400px;
+        margin: 0;
+    }
+ }
+ /* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+    .main-section{
+        flex-direction: column;
+        padding: 0px;
+        margin: 0;
+    }
+    .image-div{
+        width: 260px;
+        padding: 0;
+    }
+    .image-div img{
+        width: 100%;
+    }
+    
+    .content{
+        width: 280px;
         padding-top: 20px;
-        margin: 0 auto;
+        margin: 0;
+        margin-left: 5px;
+    }
+    .content h1{
+        font-size: 30px;
+        padding: 0;
+        line-height: 35px;
+    }
+    .content p{
+        width: 300px;
+        line-height: 22px;
+        font-size: 16px;
+    }
+    footer{
+        margin-top: 50px;
+        width: 300px;
+        display: table;
+        text-align: left;
+    }
+    footer span{
+        line-height: 20px;
     }
  }
